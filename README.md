@@ -133,13 +133,13 @@ Covered functions:
 - Manasse Vita – Developer, Designer, and Author
 
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 - Google Vertex AI for providing the conversational AI backend
 - MoneyHelper for rent vs buy educational frameworks
 - ReactJS and Flask for enabling rapid development
 - UK Government data portals for tax, mortgage, and inflation reference models
 
-📌 Academic Note
+## 📌 Academic Note
 🧪 This application was developed as part of a university dissertation titled:
 
 "Bridging the Gap Between Financial Literacy and Housing Decisions through Explainable AI"
