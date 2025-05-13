@@ -182,7 +182,7 @@ The GitHub repository contains:
 - ✅ Source code and interactive frontend/backend
 
 📂 Access the complete project archive:  
-👉 [https://github.com/your-username/rent-vs-buy-analysis](https://github.com/MVita11/rent-vs-buy-analysis)
+👉 [https://github.com/MVita11/rent-vs-buy-analysis](https://github.com/MVita11/rent-vs-buy-analysis)
 
 > 📎 *To assist assessors, screenshots, appendices, and documents are located in `/docs`, `/project-management`, and `/screenshots`.*
 
