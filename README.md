@@ -2,6 +2,12 @@
 
 > A full-stack web application that helps users in the UK make informed housing decisions by comparing renting vs buying through personalized, explainable AI-powered financial analysis.
 
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Made with React](https://img.shields.io/badge/Made%20with-React-blue)
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-yellow)
+![Flask](https://img.shields.io/badge/Backend-Flask-lightgrey)
+![Vertex AI](https://img.shields.io/badge/AI-Google%20Vertex%20AI-red)
+
 ---
 
 ## 📌 Table of Contents
@@ -13,11 +19,12 @@
 - [System Architecture](#system-architecture)  
 - [Installation & Setup](#installation--setup)  
 - [Usage Guide](#usage-guide)  
-- [Testing](#testing)  
 - [Known Limitations](#known-limitations)  
 - [Planned Features](#planned-features)  
 - [Contributors](#contributors)  
-- [License](#license)
+- [License](#license)  
+- [Acknowledgements](#acknowledgements)  
+- [Academic Note](#academic-note)
 
 ---
 
@@ -44,7 +51,7 @@ Unlike traditional calculators, this tool adapts to personal financial inputs, e
 ## 🚀 Live Demo
 
 🌐 [Live Application URL](https://your-deployed-url.com)  
-🔗 [GitHub Repository](https://github.com/your-username/rent-vs-buy-advisor)
+🔗 [GitHub Repository](https://github.com/your-username/rent-vs-buy-analysis)
 
 > ⚠️ *Ensure the app is deployed and repo is public or access-enabled.*
 
@@ -52,96 +59,132 @@ Unlike traditional calculators, this tool adapts to personal financial inputs, e
 
 ## 🧰 Tech Stack
 
-| Layer        | Technology                 |
-|--------------|----------------------------|
-| Frontend     | ReactJS, Bootstrap 5, CSS  |
-| Backend      | Flask (Python), REST APIs  |
-| AI Assistant | Google PaLM 2 via Vertex AI|
+| Layer        | Technology                  |
+|--------------|-----------------------------|
+| Frontend     | ReactJS, Bootstrap 5, CSS   |
+| Backend      | Flask (Python), REST APIs   |
+| AI Assistant | Google PaLM 2 via Vertex AI |
 | Testing      | `pytest`, `unittest`, Postman |
 | Deployment   | Vercel (frontend), Render (backend) |
-| Design Tools | Figma (UI/UX prototyping)  |
+| Design Tools | Figma (UI/UX prototyping)   |
 
 ---
 
 ## 🏗️ System Architecture
 
+<!-- You can embed the PNG or link to a PlantUML-rendered image here -->
+![System Architecture](./diagrams/system-architecture.png)
+
 ---
+
+## ⚙️ Installation & Setup
+
+### 📦 Prerequisites
+
+- Node.js ≥ 14.x  
+- Python ≥ 3.8  
+- Google Cloud API credentials for Vertex AI  
+- Vercel / Render accounts (for deployment)
+
+### 🖥️ Local Setup
+
+#### 1. Clone the repository
+
+## Set up the backend
+- cd backend
+- python main.py
+
+## Set up the frontend:
+- cd frontend
+- npm install
+- npm start
 
 ## 🧪 Usage Guide
 
 1. Open the application in your browser (e.g., [http://localhost:3000](http://localhost:3000)).
 2. Enter your:
    - Monthly rent
-   - House price and deposit
-   - Mortgage rate, term, and related costs
-   - Estimated investment return (if renting)
-3. Click **"Calculate"** to generate a side-by-side financial comparison.
-4. Use the **chat assistant** to receive plain-English explanations of your results.
-5. Adjust values to simulate new housing scenarios or test financial trade-offs.
+   - Property price and deposit
+   - Mortgage rate, term, and related ownership costs
+   - Expected investment return if renting
+3. Click **"Calculate"** to generate a side-by-side, year-by-year financial comparison.
+4. Use the **chat assistant** to receive clear, AI-generated explanations of the results and related financial concepts.
+5. Adjust values to test new scenarios, such as different timeframes, property values, or financial strategies.
+
+> 💡 Tip: Use the chatbot to explore *"what if I..."* questions like:
+> - "What if rent grows faster than inflation?"
+> - "How much would I save by investing instead of buying?"
 
 ---
 
-## ✅ Testing
-
-The system includes both unit and integration tests for functionality validation:
-
-### ✅ Backend Testing
-
-
-Covered functions:
-
-- Mortgage amortization
-
-- Rent escalation
-
-- Stamp duty calculations
-
-- Net equity and opportunity cost
-
-## ✅ API Testing
-- Test endpoints with Postman or curl:
-   -`/calculate`: Validates full financial model outputs
-   - `/chat`: Tests interaction with the AI assistant
-   - Includes handling for missing fields, invalid numbers, and timeout scenarios
-
-## ✅ Frontend Testing
-- Manual testing across:
-   - Chrome, Firefox, Safari
-   - Desktop, tablet, and mobile breakpoints
-
-- Key UI behaviors tested:
-   - Form validation
-   - Result rendering
-   - Chatbot visibility and UX
-   - API response handling (loading spinners, fallback messages)
-
 ## 🧭 Known Limitations
-- 🔒 No login or persistent user account support (yet)
-- 📉 No integration with live APIs for mortgage or property data
-- 📊 Visualizations are minimal; current version is text-heavy
-- ⚠️ AI can produce vague responses in rare or unusual scenarios
-- 🧾 Tax modelling excludes advanced cases like capital gains, remortgaging, or letting income
+
+Despite delivering a functional and educational prototype, the current system has several limitations:
+
+- 🔐 **No login or saved scenarios**: User data is not stored; session is temporary.
+- 🧾 **Simplified tax logic**: Does not yet account for capital gains tax, remortgaging, or income from letting.
+- 📉 **No live API integrations**: Property price, rent inflation, and mortgage data are entered manually.
+- 📊 **Limited data visualizations**: Results are shown in text only; graphs and timelines are not yet implemented.
+- 🤖 **AI model limitations**: In rare cases, AI responses may be overly generic or slightly repetitive.
+
+---
 
 ## 🌱 Planned Features
-- 📡 Real-time API integration with Rightmove, Zoopla, and the Bank of England
-- 📈 Graphs for breakeven points, investment trajectories, and cost summaries
-- 👤 Authenticated user profiles with dashboard and scenario history
-- 🌐 Region selection for international market expansion
-- 🧠 Fine-tuned AI responses using anonymized user data (ethical opt-in)
+
+To extend functionality and user value, the following improvements are planned:
+
+- 🔗 **Real-time APIs** for Rightmove, Zoopla, and Bank of England mortgage rates
+- 📈 **Graph-based visualizations** for:
+  - Rent vs buy breakeven timelines
+  - Net equity growth over time
+  - Investment return vs homeownership
+- 👤 **User authentication** with saved scenario history and dashboards
+- 🌍 **International adaptation**, starting with US, EU, and Canadian tax/mortgage models
+- 🧠 **Fine-tuned AI assistant** using anonymized user data (with opt-in)
+
+---
 
 ## 👥 Contributors
-- Manasse Vita – Developer, Designer, and Author
 
+- **Manasse Vita** – Full-stack Developer, Designer, and Author
+
+> 🎯 For contributions, please open an issue or submit a pull request with clear documentation.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See [LICENSE](./LICENSE) for complete details.
+
+---
 
 ## 🙌 Acknowledgements
-- Google Vertex AI for providing the conversational AI backend
-- MoneyHelper for rent vs buy educational frameworks
-- ReactJS and Flask for enabling rapid development
-- UK Government data portals for tax, mortgage, and inflation reference models
+
+- 🧠 [Google Vertex AI](https://cloud.google.com/vertex-ai) – conversational AI engine
+- 🏡 [MoneyHelper](https://www.moneyhelper.org.uk/) – rent vs buy guidance inspiration
+- 🧰 [ReactJS](https://reactjs.org/) and [Flask](https://flask.palletsprojects.com/) – development frameworks
+- 📊 [UK Gov Data](https://www.gov.uk/) – housing tax, inflation, and council tax references
+
+---
 
 ## 📌 Academic Note
+
 🧪 This application was developed as part of a university dissertation titled:
 
-"Bridging the Gap Between Financial Literacy and Housing Decisions through Explainable AI"
+**"Bridging the Gap Between Financial Literacy and Housing Decisions through Explainable AI"**
 
-The full paper, including literature review, methodology, and evaluation, is available upon request or as a supplemental file in this repository.
+The GitHub repository contains:
+
+- ✅ Project Proposal  
+- ✅ Methodology, system architecture, and implementation  
+- ✅ Evaluation results and user testing feedback  
+- ✅ Sprint evidence and GitHub Project board  
+- ✅ Source code and interactive frontend/backend
+
+📂 Access the complete project archive:  
+👉 [https://github.com/your-username/rent-vs-buy-analysis](https://github.com/MVita11/rent-vs-buy-analysis)
+
+> 📎 *To assist assessors, screenshots, appendices, and documents are located in `/docs`, `/project-management`, and `/screenshots`.*
+
+---
