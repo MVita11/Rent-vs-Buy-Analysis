@@ -49,8 +49,7 @@ Unlike traditional calculators, this tool adapts to personal financial inputs, e
 ---
 
 ## 🚀 Live Demo
-
-🌐 [Live Application URL](https://your-deployed-url.com)  
+  
 🔗 [GitHub Repository](https://github.com/your-username/rent-vs-buy-analysis)
 
 > ⚠️ *Ensure the app is deployed and repo is public or access-enabled.*
@@ -73,7 +72,7 @@ Unlike traditional calculators, this tool adapts to personal financial inputs, e
 ## 🏗️ System Architecture
 
 <!-- You can embed the PNG or link to a PlantUML-rendered image here -->
-![System Architecture](./diagrams/system-architecture.png)
+![System Architecture](https://www.plantuml.com/plantuml/png/VLF1RjD04BtlLunwGCuXGkBO0sfQafAgXU3GNY12KtjmLbtlMhFZf152uX_uGxw4MSTDwWfnIRGxyzwRztPip5aKP6bh1pbvkOldxMwvYqArCMB54KpcuqNO4bFPTS0cWlR0p7hqXKK7at9ZOs3uy-itxA4muM9jXGffcOp1GhHy6ucDIRym7h-56GSlv4iuXQaNuWZV3umb2dxrhy2cWg8ZRAsieLYZt0Sn1sZYESVYOK-pr3zb2Lnt1B2n2Fbq-HacYpbahmjqHUjGQ6GIfiSVVKnzPJqfpqMecrOe0lTsxzLkBCWZsn3DIy1mY9pKitzkvfu97ygmzP1TBJz-69d_przJZ5WHID3aNtf82Gp6rvvlDw5itNvm7uNRb5V3Qa9IXh5ZLROxOg77H9ejyFe6tepC4QnKVOFMJ-5JIxphGk-PpA7uKZIdsAWkGTOuj7wigJWRrq2FUlOeDlY1qC3oB72DacRYdcPWhW_gc6jQneeyCGgLWBfu1HdJA2H5TdBeptB2GgwMenFuOG2-p7tJIgUsIiUB_IB1xRmxgeNMIOHSeSJ4A_Fp6UdJGDdCONn83_74ceTMw1IEcxKQtAf8Tp5b3WplqPVE-cf8VloA-ctA5ZjP1_yaSHDOgjHvqMi4xaVs0jEeobt2eEcIwofBmRg1Twtiu3fKjbZj_MyeIfr0bnosiXvEeVbFOhHHq4illEYU_RXIlUvb29MZV-nIHtYcERMrCty1)
 
 ---
 
